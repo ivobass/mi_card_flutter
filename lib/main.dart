@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+  
 
 void main() {
   runApp(
@@ -111,14 +113,14 @@ class MyApp extends StatelessWidget {
                     Card(
                   color: Colors.white,
                   margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                      // EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
-                      Icons.mail,
+                      MdiIcons.twitter,
                       color: Colors.teal,
                     ),
                     title: Text(
-                      'ivobaptista@email.com',
+                      'ivobaptista',
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontFamily: 'Source Sans Pro',
