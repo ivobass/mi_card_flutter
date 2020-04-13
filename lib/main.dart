@@ -16,49 +16,18 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+            child: Column(
               children: <Widget>[
-                Container(
-                  width: 100.0,
-                  // margin: EdgeInsets.only(left: 30.0),
-                  // padding: EdgeInsets.all(20.0),
-                  color: Colors.red,
-                  child: Text('Container 1'),
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('assets/ivo.jpg'),
                 ),
-                SizedBox(
-                  width: 20.0,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-
-                    Container(
-                      width: 100,
-                      height: 100,
-                      // margin: EdgeInsets.only(left: 30.0),
-                      // padding: EdgeInsets.all(20.0),
-                      color: Colors.yellow,
-                      child: Text('Container 3'),
-                    ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      // margin: EdgeInsets.only(left: 30.0),
-                      // padding: EdgeInsets.all(20.0),
-                      color: Colors.green,
-                      child: Text('Container 3'),
-                    ),
-                  ],
-                ),
-                Container(
-                  width: 100,
-                  // margin: EdgeInsets.only(left: 30.0),
-                  // padding: EdgeInsets.all(20.0),
-                  color: Colors.blue,
-                  child: Text('Container 2'),
-                ),
+                Text('Ivo Baptista',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight:  FontWeight.bold,
+                ),),
               ],
             ),
           ),
