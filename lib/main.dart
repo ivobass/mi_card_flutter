@@ -113,7 +113,7 @@ class MyApp extends StatelessWidget {
                     Card(
                   color: Colors.white,
                   margin:
-                      // EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
                       MdiIcons.twitter,
