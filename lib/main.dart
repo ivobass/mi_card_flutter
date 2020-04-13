@@ -89,6 +89,44 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                  Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.web,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'www.ivopaginaweb.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                ),
+                    Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.mail,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'ivobaptista@email.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
