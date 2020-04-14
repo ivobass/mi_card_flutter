@@ -128,6 +128,61 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                 Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: FaIcon(FontAwesomeIcons.youtube,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'ivobaptista',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                ),
+                 Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: FaIcon(FontAwesomeIcons.facebook,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'ivobaptista',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                ),
+                 Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: FaIcon(FontAwesomeIcons.instagram,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'ivobaptista',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                ),
+                
               ],
             ),
           ),
