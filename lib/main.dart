@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
   
 
 void main() {
@@ -115,8 +115,7 @@ class MyApp extends StatelessWidget {
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
-                    leading: Icon(
-                      MdiIcons.twitter,
+                    leading: FaIcon(FontAwesomeIcons.twitter,
                       color: Colors.teal,
                     ),
                     title: Text(
