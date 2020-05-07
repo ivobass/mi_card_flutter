@@ -16,21 +16,22 @@ class MyApp extends StatelessWidget {
     return Container(
       child: MaterialApp(
         home: Scaffold(
-          backgroundColor: Colors.teal,
+          backgroundColor: Color.fromRGBO(24, 27, 37, 0.9),
           body: SafeArea(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
                   radius: 50.0,
-                  backgroundImage: AssetImage('assets/ivo.jpg'),
+                   backgroundColor: Colors.black,
+                  backgroundImage: AssetImage('assets/ivo.png'),
                 ),
                 Text(
                   'Ivo Baptista',
                   style: TextStyle(
                     fontFamily: 'Pacifico',
                     fontSize: 40,
-                    color: Colors.white,
+                    color: Color.fromRGBO(221, 69, 70, 0.8),
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -53,19 +54,19 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
                           Icons.phone,
-                          color: Colors.teal,
+                          color: Colors.white,
                         ),
                         title: 
                         Text(
                           '+351 91 xxx xxxx',
                           style: TextStyle(
-                            color: Colors.teal.shade900,
+                            color: Colors.white,
                             fontFamily: 'Source Sans Pro',
                             fontSize: 20.0,
                           ),
@@ -73,18 +74,18 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
                       Icons.mail,
-                      color: Colors.teal,
+                      color: Colors.white,
                     ),
                     title: Text(
                       'ivobaptista@email.com',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.white,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
@@ -92,18 +93,18 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                   Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
                       Icons.web,
-                      color: Colors.teal,
+                      color: Colors.white,
                     ),
                     title: Text(
                       'www.ivopaginaweb.com',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.white,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
@@ -111,17 +112,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                     Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: FaIcon(FontAwesomeIcons.twitter,
-                      color: Colors.teal,
+                      color: Colors.white,
                     ),
                     title: Text(
                       'ivobaptista',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.white,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
@@ -129,17 +130,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                  Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: FaIcon(FontAwesomeIcons.youtube,
-                      color: Colors.teal,
+                      color: Colors.white,
                     ),
                     title: Text(
                       'ivobaptista',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.white,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
@@ -147,17 +148,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                  Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: FaIcon(FontAwesomeIcons.facebook,
-                      color: Colors.teal,
+                      color: Colors.white,
                     ),
                     title: Text(
                       'ivobaptista',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.white,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
@@ -165,17 +166,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                  Card(
-                  color: Colors.white,
+                  color: Color.fromRGBO(246,96,97,0.9),
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: ListTile(
                     leading: FaIcon(FontAwesomeIcons.instagram,
-                      color: Colors.teal,
+                      color: Colors.white,
                     ),
                     title: Text(
                       'ivobaptista',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
+                        color: Colors.white,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
