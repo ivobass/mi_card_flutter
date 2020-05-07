@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-  
 
 void main() {
   runApp(
@@ -9,9 +8,24 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  Card buildCard(Icon icon, Color color, String name) {
+    return Card(
+      color: color,
+      margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+      child: ListTile(
+        leading: icon,
+        title: Text(
+          name,
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: 'Source Sans Pro',
+            fontSize: 20.0,
+          ),
+        ),
+      ),
+    );
+  }
 
-
-  
   const MyApp({Key key}) : super(key: key);
 
   @override
@@ -26,7 +40,7 @@ class MyApp extends StatelessWidget {
               children: <Widget>[
                 CircleAvatar(
                   radius: 50.0,
-                   backgroundColor: Colors.black,
+                  backgroundColor: Colors.black,
                   backgroundImage: AssetImage('assets/ivo.png'),
                 ),
                 Text(
@@ -53,140 +67,57 @@ class MyApp extends StatelessWidget {
                   width: 150.0,
                   child: Divider(
                     color: Colors.teal.shade100,
-
                   ),
                 ),
-                Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: Icon(
-                          Icons.phone,
-                          color: Colors.white,
-                        ),
-                        title: 
-                        Text(
-                          '+351 91 xxx xxxx',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0,
-                          ),
-                        ),
-                  ),
-                ),
-                Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: Icon(
+                buildCard(
+                    Icon(
+                      Icons.phone,
+                      color: Colors.white,
+                    ),
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "+351 91 xxx xxx"),
+                buildCard(
+                    Icon(
                       Icons.mail,
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'ivobaptista@email.com',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-                  Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: Icon(
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "ivobaptista@email.com"),
+                buildCard(
+                    Icon(
                       Icons.web,
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'www.ivopaginaweb.com',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-                    Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: FaIcon(FontAwesomeIcons.twitter,
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "www.ivopaginaweb.com"),
+                buildCard(
+                    Icon(
+                      FontAwesomeIcons.twitter,
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'ivobaptista',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-                 Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: FaIcon(FontAwesomeIcons.youtube,
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "ivobaptista"),
+                buildCard(
+                    Icon(
+                      FontAwesomeIcons.youtube,
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'ivobaptista',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-                 Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: FaIcon(FontAwesomeIcons.facebook,
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "ivobaptista"),
+                buildCard(
+                    Icon(
+                      FontAwesomeIcons.facebook,
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'ivobaptista',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-                 Card(
-                  color: Color.fromRGBO(246,96,97,0.9),
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: ListTile(
-                    leading: FaIcon(FontAwesomeIcons.instagram,
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "ivobaptista"),
+                buildCard(
+                    Icon(
+                      FontAwesomeIcons.instagram,
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'ivobaptista',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                ),
-                
+                    Color.fromRGBO(246, 96, 97, 0.9),
+                    "ivobaptista"),
               ],
             ),
           ),
