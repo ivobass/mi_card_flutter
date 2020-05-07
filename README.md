@@ -2,7 +2,7 @@
 
 # Mi Card
 
-<img src="assets/mycard.png" alt="page-home">
+<img src="assets/mymoderncard.png" alt="page-home">
 
 ## Our Goal
 
