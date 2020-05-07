@@ -13,7 +13,7 @@ The objective of this challenge is to solidify what you've learn't in the Dicee 
 We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button. 
 
 
-<img src="assets/mymoderncard.png" alt="page-home">
+<img width=80 src="assets/mymoderncard.png" alt="page-home">
 
 
 
